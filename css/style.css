@@ -175,9 +175,7 @@ body {
 /* Advantages section */
 .advantages {
   padding-top: 52px;
-}
-
-.advantages__container {
+  padding-bottom: 63.5px;
 }
 
 .advantages__heading {
@@ -218,4 +216,30 @@ body {
 
 .advantages__text a:hover {
   color: #013fb2;
+}
+
+/* About section */
+.about {
+  padding-top: 63.5px;
+  padding-bottom: 52px;
+}
+
+.about__heading {
+  margin-bottom: 40px;
+}
+
+.about__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.about__title {
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+
+.about__text {
+  font-size: 18px;
+  line-height: 1.33;
 }
