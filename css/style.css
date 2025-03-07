@@ -1,0 +1,152 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Light.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Book.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Medium.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Bold.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --main: #0d0d0d;
+
+  --font: "Gotham", sans-serif;
+}
+
+body {
+  margin: 0;
+  min-width: 360px;
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--main);
+  background-color: #ffffff;
+}
+
+.container {
+  padding: 0 21px;
+  margin: 0 auto;
+  max-width: 1160px;
+}
+
+.container-gradient {
+  background: linear-gradient(
+    180deg,
+    #eae9ff 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+}
+
+.btn-container {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  border: 1px solid #6a50d2;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #4d35af;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  color: #6a50d2;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-secondary:hover {
+  background-color: #cfc6f4;
+}
+
+.heading {
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.heading-primary {
+  font-size: 40px;
+}
+
+.banner {
+  padding-top: 64px;
+}
+
+.banner__container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 455px;
+  align-items: center;
+}
+
+.banner__heading {
+  margin-bottom: 20px;
+}
+
+.banner__text {
+  margin-bottom: 31px;
+  font-size: 18px;
+  line-height: 1.33;
+}
