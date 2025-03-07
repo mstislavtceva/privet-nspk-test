@@ -102,6 +102,7 @@ body {
 }
 
 .btn {
+  display: inline-block;
   border: 1px solid #6a50d2;
   border-radius: 10px;
   padding: 12px 24px;
@@ -221,7 +222,7 @@ body {
 /* About section */
 .about {
   padding-top: 63.5px;
-  padding-bottom: 52px;
+  padding-bottom: 64px;
 }
 
 .about__heading {
@@ -240,6 +241,42 @@ body {
 }
 
 .about__text {
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+/* Promo section */
+.promo {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.promo__content {
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 322px;
+  align-items: center;
+  background-color: #eee9ff;
+}
+
+.promo__info {
+  padding: 32px;
+}
+
+.promo__heading {
+  margin-bottom: 20px;
+}
+
+.promo__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 18px;
+  margin-bottom: 32px;
+  list-style-type: disc;
+}
+
+.promo__item {
   font-size: 18px;
   line-height: 1.33;
 }
