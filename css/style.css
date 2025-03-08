@@ -107,6 +107,7 @@ body {
   border-radius: 10px;
   padding: 12px 24px;
   font-size: 16px;
+  color: #6a50d2;
   background-color: transparent;
   cursor: pointer;
 }
@@ -115,19 +116,28 @@ body {
   color: #ffffff;
   background-color: #4d35af;
   opacity: 1;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .btn-primary:hover {
   opacity: 0.9;
+  background-color: #4d35af;
+}
+
+.btn-primary:active {
+  opacity: 1;
+  background-color: #301b87;
 }
 
 .btn-secondary {
-  color: #6a50d2;
   transition: background-color 0.3s ease-in-out;
 }
 
 .btn-secondary:hover {
+  background-color: #efecfb;
+}
+
+.btn-secondary:active {
   background-color: #cfc6f4;
 }
 
@@ -260,7 +270,7 @@ body {
 }
 
 .promo__info {
-  padding: 32px;
+  padding: 31px;
 }
 
 .promo__heading {
