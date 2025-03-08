@@ -290,3 +290,98 @@ body {
   font-size: 18px;
   line-height: 1.33;
 }
+
+/* Technician section */
+.technician {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.technician__heading {
+  margin-bottom: 40px;
+}
+
+.technician__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+.technician__item {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.item {
+  padding: 24px 20px;
+  border-radius: 20px;
+  background-color: #f3f3f3;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.item-1:hover {
+  background-color: #ffe0e9;
+}
+
+.item-2:hover {
+  background-color: #efeeff;
+}
+
+.item-3:hover {
+  background-color: #ffecdb;
+}
+
+.item-4:hover {
+  background-color: #ddf5ff;
+}
+
+.item__image {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
+}
+
+.item__image svg {
+  width: 48px;
+  height: 48px;
+}
+
+.icon-default {
+  opacity: 1;
+}
+
+.icon-hover {
+  opacity: 0;
+}
+
+.icon-default,
+.icon-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.item:hover .icon-default {
+  opacity: 0;
+}
+
+.item:hover .icon-hover {
+  opacity: 1;
+}
+
+.item__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.item__text {
+  font-size: 16px;
+  line-height: 1.38;
+}
