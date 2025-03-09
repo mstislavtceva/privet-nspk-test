@@ -512,3 +512,87 @@ body {
 .steps__info a:hover {
   color: #013fb2;
 }
+
+/* Banks section */
+.banks {
+  padding-top: 62px;
+  padding-bottom: 64px;
+}
+
+.banks__heading {
+  margin-bottom: 38px;
+  text-align: center;
+}
+
+.search {
+  position: relative;
+  display: flex;
+}
+
+.search__input {
+  border: none;
+  border-bottom: 1px solid #8c8c8c;
+  padding: 15px 35px 17px 47px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 49.2%;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+}
+
+.search__input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.search__lens {
+  position: absolute;
+  left: 27%;
+  top: 19%;
+  transform: translateY(-21%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+.search__clear {
+  position: absolute;
+  right: 27%;
+  top: 18%;
+  display: none;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-21%);
+  cursor: pointer;
+}
+
+.search__clear:hover {
+  color: #333;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+input[type="search"]::-ms-clear {
+  display: none;
+}
+
+.search input:not(:placeholder-shown) + .search__clear {
+  display: block;
+}
+
+.banks__list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+.banks__item {
+  border-radius: 6px;
+  padding: 20px;
+  max-height: 80px;
+  background-color: #f8f8f8;
+}
