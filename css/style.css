@@ -249,6 +249,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .banner__text {
+    margin-bottom: 33px;
     font-size: 16px;
     line-height: 1.37;
   }
@@ -269,7 +270,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .advantages {
-    padding-top: 48px;
+    padding-top: 46px;
     padding-bottom: 48px;
   }
 }
@@ -320,6 +321,12 @@ body {
   }
 }
 
+@media screen and (max-width: 375px) {
+  .advantages__item:first-child {
+    padding: 24px 30px 19px 19px;
+  }
+}
+
 .advantages__image {
   width: 48px;
   height: 48px;
@@ -330,6 +337,13 @@ body {
 .advantages__text {
   font-size: 16px;
   line-height: 1.38;
+}
+
+@media screen and (max-width: 375px) {
+  .advantages__text {
+    font-size: 14px;
+    line-height: 1.45;
+  }
 }
 
 .advantages__text a {
@@ -351,6 +365,12 @@ body {
   .about {
     padding-top: 35px;
     padding-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .about {
+    padding-top: 66px;
   }
 }
 
@@ -479,6 +499,12 @@ body {
   }
 }
 
+@media screen and (max-width: 375px) {
+  .promo__image {
+    margin: 0;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .promo__btn {
     width: 100%;
@@ -495,6 +521,12 @@ body {
   .technician {
     padding-top: 28px;
     padding-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .technician {
+    padding-top: 50px;
   }
 }
 
@@ -975,6 +1007,7 @@ input[type="search"]::-ms-clear {
 @media screen and (max-width: 375px) {
   .banks__list {
     grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
 }
 
@@ -983,4 +1016,10 @@ input[type="search"]::-ms-clear {
   padding: 20px;
   max-height: 80px;
   background-color: #f8f8f8;
+}
+
+@media screen and (max-width: 375px) {
+  .banks__item {
+    max-height: 75px;
+  }
 }

@@ -1,9 +1,10 @@
-const input = document.querySelector("#search");
-const clearIcon = document.querySelector(".search__clear");
+let input = document.getElementById("search");
+let clearIcon = document.getElementById("search-clear");
 
 // Очистка инпута
 clearIcon.addEventListener("click", function () {
   input.value = "";
+  input.dispatchEvent(new Event("input"));
   input.focus();
 });
 
@@ -14,7 +15,7 @@ input.addEventListener("input", function () {
 
   banks.forEach((bank) => {
     let bankName = bank.getAttribute("data-name").toLowerCase();
-    if (bankName.includes(query)) {
+    if (query === "" || bankName.includes(query)) {
       bank.style.display = "block";
     } else {
       bank.style.display = "none";
